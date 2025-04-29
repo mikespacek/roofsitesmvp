@@ -119,7 +119,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-10 justify-center items-center">
           {testimonials.map((t, idx) => (
             <div key={idx} className="bg-gradient-to-br from-gray-100 to-blue-50 border border-gray-200 rounded-2xl shadow-lg p-8 w-80 flex flex-col items-center text-center animate-fade-in-up">
-              <svg width="48" height="48" fill="none" className="mb-4"><circle cx="24" cy="24" r="24" fill="#2563eb" /><text x="24" y="32" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">"</text></svg>
+              <svg width="48" height="48" fill="none" className="mb-4"><circle cx="24" cy="24" r="24" fill="#2563eb" /><text x="24" y="32" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">&quot;</text></svg>
               <p className="text-lg text-gray-800 mb-4">{t.quote}</p>
               <div className="text-gray-700 font-semibold">{t.name}</div>
               <div className="text-gray-500 text-sm">{t.company}</div>
