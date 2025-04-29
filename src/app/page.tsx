@@ -44,7 +44,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Choose Your Look</h2>
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-          {templates.map((tpl, i) => (
+          {templates.map((tpl) => (
             <div
               key={tpl.id}
               className="group bg-blue-50 border-2 border-blue-200 rounded-2xl shadow-lg p-6 w-80 transition-transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer relative"
