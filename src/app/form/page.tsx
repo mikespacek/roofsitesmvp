@@ -42,7 +42,7 @@ export default function FormPage() {
           />
         </div>
         <div>
-          <label className="block text-gray-700 font-medium mb-1">Owner's Name</label>
+          <label className="block text-gray-700 font-medium mb-1">Owner&apos;s Name</label>
           <input
             type="text"
             name="ownerName"
