@@ -46,6 +46,20 @@ export default function PreviewPage() {
 
   return (
     <div className="min-h-screen w-full">
+      <div className="flex justify-center gap-4 py-6 bg-gray-100 border-b">
+        <button
+          onClick={() => window.location.href = "/form"}
+          className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded font-medium transition-colors"
+        >
+          Edit Info
+        </button>
+        <button
+          onClick={() => window.location.href = "/templates"}
+          className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded font-medium transition-colors"
+        >
+          Choose Different Template
+        </button>
+      </div>
       {/* Hero Section */}
       <section className={`py-12 px-4 text-center ${heroStyles[template as keyof typeof heroStyles]}`}> 
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">{info.businessName}</h1>
@@ -77,4 +91,4 @@ export default function PreviewPage() {
       </section>
     </div>
   );
-} 
+}
